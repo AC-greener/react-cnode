@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HomeHeader from '../src/components/homeheader/index'
+import Aside from '../src/components/aside/index'
 import All from './pages/all/index'
 import Share from './pages/share/index'
 import Job from './pages/job/index'
@@ -11,8 +12,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className='app'>
           <HomeHeader />
+          <Aside />
           <Route path='/' exact component={All}/>
           <Route path='/share' component={Share}/>
           <Route path='/job' component={Job}/>

@@ -1,0 +1,23 @@
+aside {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100vh;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+aside .left {
+  float: left;
+  width: 80%;
+  height: 100%;
+  background-color: blueviolet;
+}
+aside .right {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #0000009e;
+}
