@@ -1,0 +1,22 @@
+.header {
+  height: 64px;
+  background-color: rgb(0, 188, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .sideNav {
+  position: absolute;
+  left: 20px;
+}
+.nav {
+  height: 48px;
+}
+.nav>ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1px;
+  background-color: rgb(0, 188, 212);
+}
