@@ -6,8 +6,10 @@ import Share from './pages/share/index'
 import Job from './pages/job/index'
 import Question from './pages/question/index'
 import Essence from './pages/essence/index'
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import './style.css'
+
+import { BrowserRouter as Router, Route } from "react-router-dom"
+
 class App extends Component {
   render() {
     return (
