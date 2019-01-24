@@ -5,10 +5,10 @@ class Aside extends React.Component {
   
   constructor(props) {
     super(props)
-    console.log(
-    )
+    console.log()
   }
   render() {
+    console.log(this.props)
     if(this.props.modalStatus) {
       return (
         <aside className='clearfix'>
@@ -63,8 +63,8 @@ class Aside extends React.Component {
                   </svg>
                 </span>
                 <span>
-                {/* <button id="add1" onClick={()=> this.props.add1()}>+1</button>
-                  {this.props.n} */}
+                <button id="add1" onClick={()=> this.props.add1()}>+1</button>
+                  {this.props.n}
                   Report a bug
                 </span>
               </div>
