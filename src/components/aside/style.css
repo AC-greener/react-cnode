@@ -3,6 +3,7 @@ aside {
   top:0;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 .clearfix::after {
   display: block;
@@ -12,16 +13,36 @@ aside {
 aside .left {
   padding-left: 35px;
   padding-top: 61px;
-  color: #ea4c89;
+  /* color: #ea4c89; */
   float: left;
-  width: 90%;
+  width: calc(100% - 20px);
   height: 100%;
   /* background: rgba(47,47,47,0.98); */
   background: rgba(46, 46, 46);
 }
 aside .right {
   float: left;
-  width: 10%;
+  width: 20px;
   height: 100%;
-  background: rgba(46, 46, 46, .8);
+  /* background: rgba(46, 46, 46, .8); */
+  background: red;  
+}
+aside .left .itemWrapper {
+  color: rgba(255, 255, 255);
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+aside .left .itemWrapper .icon{
+  width: 1.2em;
+  height: 1.2em;
+  fill: gray;
+  margin-right: 30px;
+}
+aside .left .itemWrapper .item {
+  margin-bottom: 20px;
+}
+aside .iconDribbble {
+  width: 80px;
+  height: 80px;
 }
