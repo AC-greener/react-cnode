@@ -17,11 +17,11 @@ class App extends Component {
         <div className='app'>
           <HomeHeader />
           <Aside />
-          <Route path='/' exact component={All}/>
+          {/* <Route path='/' exact component={All}/>
           <Route path='/share' component={Share}/>
           <Route path='/job' component={Job}/>
           <Route path='/question'  component={Question}/>
-          <Route path='/essence'  component={Essence}/>
+          <Route path='/essence'  component={Essence}/> */}
         </div>
       </Router>
     );

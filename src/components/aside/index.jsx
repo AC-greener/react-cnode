@@ -3,12 +3,7 @@ import { connect } from 'react-redux'
 import './style.css'
 class Aside extends React.Component {
   
-  constructor(props) {
-    super(props)
-    console.log()
-  }
   render() {
-    console.log(this.props)
     if(this.props.modalStatus) {
       return (
         <aside className='clearfix'>
@@ -92,7 +87,6 @@ const mapDispatchToProps = (dispatch) => {
       dispatch({type: 'add', payload: 1})
     },
     closeLoginModal() {
-      console.log('colse')
       dispatch({type: 'change_login_modal', value: false})
     }
   }

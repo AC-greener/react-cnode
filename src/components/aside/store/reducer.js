@@ -9,7 +9,6 @@ const reducer = (state = defaultState, action) => {
       return newState
     }
     if(action.type === 'change_login_modal') {
-      console.log('value', action.value)
       let newState = {n: state.n, showLoginModal: action.value}
       return newState
     }  

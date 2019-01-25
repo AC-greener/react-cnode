@@ -1,17 +1,18 @@
 import React from 'react'
 import './style.css'
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux'
 class HomeHeader extends React.Component {
   render() {
     return (
       <div>
         <header className='header'>
-          <svg className="icon sideNav" aria-hidden="true">
+          <svg onClick={this.props.showAsideModal} className="icon sideNav" aria-hidden="true">
             <use xlinkHref="#icon-nav"></use>
           </svg>
           nodeJs论坛
         </header >
-        <nav className='nav'>
+        {/* <nav className='nav'>
           <ul>
             <li>
               <Link to='/'>全部</Link>  
@@ -29,10 +30,23 @@ class HomeHeader extends React.Component {
               <Link to='/job'>招聘</Link>  
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     )
   }
 }
 
-export default HomeHeader
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    showLoginModal: state.asideReducer.showLoginModal
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    showAsideModal() {
+      dispatch({type: 'show_modal', value: true})
+    },
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader)
