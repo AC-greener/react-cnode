@@ -63,8 +63,8 @@ class Aside extends React.Component {
                   </svg>
                 </span>
                 <span>
-                <button id="add1" onClick={()=> this.props.add1()}>+1</button>
-                  {this.props.n}
+                {/* <button id="add1" onClick={()=> this.props.add1()}>+1</button>
+                  {this.props.n} */}
                   Report a bug
                 </span>
               </div>
@@ -81,8 +81,8 @@ class Aside extends React.Component {
 }
 const mapStateToProps = (state) => {
   return {
-    n: state.n,
-    modalStatus: state.showLoginModal
+    n: state.asideReducer.n,
+    modalStatus: state.asideReducer.showLoginModal
   }
 }
 

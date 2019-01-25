@@ -17,15 +17,13 @@ aside .left {
   float: left;
   width: calc(100% - 20px);
   height: 100%;
-  /* background: rgba(47,47,47,0.98); */
   background: rgba(46, 46, 46);
 }
 aside .right {
   float: left;
   width: 20px;
   height: 100%;
-  /* background: rgba(46, 46, 46, .8); */
-  background: red;  
+  background: rgba(46, 46, 46, .8);
 }
 aside .left .itemWrapper {
   color: rgba(255, 255, 255);
