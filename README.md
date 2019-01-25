@@ -1,2 +1,0 @@
-# react-cnode
-react cnode
