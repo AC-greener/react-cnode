@@ -4,35 +4,33 @@ import { Link } from "react-router-dom";
 import { connect } from 'react-redux'
 class HomeHeader extends React.Component {
   render() {
-    return (
-      <div>
-        <header className='header'>
+    return <div>
+        <header className="header">
           <svg onClick={this.props.showAsideModal} className="icon sideNav" aria-hidden="true">
-            <use xlinkHref="#icon-nav"></use>
+            <use xlinkHref="#icon-nav" />
           </svg>
-          nodeJs论坛
-        </header >
-        {/* <nav className='nav'>
-          <ul>
-            <li>
-              <Link to='/'>全部</Link>  
-            </li>
-            <li>
-              <Link to='/essence'>精华</Link>  
-            </li>
-            <li>
-              <Link to='/share'>分享</Link>  
-            </li>
-            <li>
-              <Link to='/question'>问答</Link>  
-            </li>
-            <li>
-              <Link to='/job'>招聘</Link>  
-            </li>
-          </ul>
-        </nav> */}
-      </div>
-    )
+          Dribbble
+        </header>
+        <div className="homeHero">
+          <div className="imgWrapper">
+            <img src={require('../../statics/imgs/dribbble1.png')} alt="" />
+          </div>
+          <h3>
+            <div>Discover the world’s top </div>
+            <div>designers & creatives</div>
+          </h3>
+          <p className='descDribbble'>
+            <div>Dribbble is the leading destination to find</div>
+            <div>& showcase creative work and home to </div>
+            <div>the world's best design professionals.</div>
+          </p>
+          <div className='buttonWrapper'>
+            <button>sign in</button>
+          </div>
+        </div>
+        <div className="tabBar">
+        </div>
+      </div>;
   }
 }
 

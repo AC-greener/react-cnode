@@ -1,4 +1,3 @@
-import asideReducer from '../../aside/store/reducer'
 
 const defaultState = {
 
