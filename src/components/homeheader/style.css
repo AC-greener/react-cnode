@@ -62,7 +62,7 @@
   transform: translateY(-50%);
 }
 .tabBar span .icon {
-  fil: rgb(187, 187, 187);
+  fill: rgb(187, 187, 187);
   height: 1.4em;
   width: 1.4em;
 }

@@ -1,8 +1,16 @@
 import React from 'react'
 import './style.css'
+import axios from 'axios'
 class Main extends React.Component {
   constructor(props) {
     super(props)
+  }
+  componentDidMount() {
+    axios
+      .get('/api/test.json')
+      .then(res => {
+        console.log(res)
+      })
   }
   render() {
     return (
