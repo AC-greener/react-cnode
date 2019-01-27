@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import './style.css'
+import axios from 'axios'
+import store from '../../store/index'
 class Aside extends React.Component {
   
   render() {
@@ -72,6 +74,19 @@ class Aside extends React.Component {
       return null 
     }
 
+  }
+  componentDidMount() {
+    const action = (dispatch) => {
+      return axios
+          .get('/api/test.json')
+          .then(res => {
+            console.log(res.data)
+            dispatch({type: 'xxx', data: res.data})
+          })
+    }
+    //本来的action是一个对象，现在是一个函数
+    // console.log(action())
+    store.dispatch(action)
   }
 }
 const mapStateToProps = (state) => {

@@ -5,13 +5,6 @@ class Main extends React.Component {
   constructor(props) {
     super(props)
   }
-  componentDidMount() {
-    axios
-      .get('/api/test.json')
-      .then(res => {
-        console.log(res)
-      })
-  }
   render() {
     return (
       <div className='contentWrapper'>
