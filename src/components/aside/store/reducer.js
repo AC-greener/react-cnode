@@ -1,17 +1,15 @@
 const defaultState = {
   n: 10, 
-  showLoginModal: true
+  showLoginModal: false
 }
 
-const reducer = (state = defaultState, action) => {
-    if(action.type === 'add') {
-      let newState = {n: state.n + action.payload}
-      return newState
-    }
+const asideReducer = (state = defaultState, action) => {
+  console.log(state, action)
     if(action.type === 'change_login_modal') {
-      let newState = {n: state.n, showLoginModal: action.value}
+      let newState = { n: state.n, showLoginModal: action.value }
+      console.log('newState', newState)
       return newState
     }  
     return state
 }
-export default reducer
+export default asideReducer

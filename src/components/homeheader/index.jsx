@@ -37,15 +37,13 @@ class HomeHeader extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
-    showLoginModal: state.asideReducer.showLoginModal
   }
 }
 const mapDispatchToProps = (dispatch) => {
   return {
     showAsideModal() {
-      dispatch({type: 'show_modal', value: true})
+      dispatch({ type: 'change_login_modal', value: true})
     },
   }
 }
