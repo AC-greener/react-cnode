@@ -29,6 +29,17 @@ class HomeHeader extends React.Component {
           </div>
         </div>
         <div className="tabBar">
+          <div>
+            popular
+          </div>
+          <div>
+            rencent
+          </div>
+          <span>
+            <svg  className="icon" aria-hidden="true">
+              <use xlinkHref="#icon-grid" />
+            </svg>
+          </span>
         </div>
       </div>;
   }

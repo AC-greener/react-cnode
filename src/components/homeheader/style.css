@@ -4,7 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
 }
 .header .sideNav {
   position: absolute;
@@ -18,6 +20,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
 }
 .homeHero .imgWrapper {
   height: 100%;
@@ -41,6 +44,27 @@
 }
 .homeHero .buttonWrapper {
   margin: 21px;
+}
+.tabBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  background: rgb(251, 251, 251);
+}
+.tabBar div {
+  margin: 8px;
+}
+.tabBar span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tabBar span .icon {
+  fil: rgb(187, 187, 187);
+  height: 1.4em;
+  width: 1.4em;
 }
 .homeHero .imgWrapper img {
   width: 70%;
