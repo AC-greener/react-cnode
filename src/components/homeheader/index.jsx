@@ -25,7 +25,7 @@ class HomeHeader extends React.Component {
             <div>the world's best design professionals.</div>
           </p>
           <div className='buttonWrapper'>
-            <button>sign in</button>
+          <Link className='login' to='/login'>sign in</Link>
           </div>
         </div>
         <div className="tabBar">

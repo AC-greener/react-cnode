@@ -11,11 +11,21 @@ class Main extends React.Component {
         <div className='item'>
           <img src={require('../../statics/imgs/item1.jpg')} />
         </div>
-        <div className='item'>2</div>
-        <div className='item'>3</div>
-        <div className='item'>4</div>
-        <div className='item'>5</div>
-        <div className='item'>6</div>
+        <div className='item'>
+          <img src={require('../../statics/imgs/item2.png')} alt=""/>
+        </div>
+        <div className='item'>
+          <img src={require('../../statics/imgs/item3.png')} alt="" />
+        </div>
+        <div className='item'>
+          <img src={require('../../statics/imgs/item4.png')} alt="" />
+        </div>
+        <div className='item'>
+          <img src={require('../../statics/imgs/item5.png')} alt="" />
+        </div>
+        <div className='item'>
+          <img src={require('../../statics/imgs/item6.png')} alt="" />
+        </div>
       </div>
     )
   }
