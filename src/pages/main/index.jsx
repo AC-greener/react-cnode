@@ -11,7 +11,7 @@ class Main extends React.Component {
         <div className='contentWrapper'>
           <Link to='/shots1'>
             <div className='item'>
-              <img src={require('../../statics/imgs/item1.jpg')} alt='' />
+              <img src={require('../../statics/imgs/item10.png')} alt='' />
             </div>
           </Link>
 

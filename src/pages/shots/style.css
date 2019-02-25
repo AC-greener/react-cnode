@@ -1,5 +1,7 @@
 .shotsWrap {
   padding: 22px;
+  background-color: rgba(244, 244, 244, 1)
+
 }
 .avatarWrap {
   display: flex;
@@ -15,13 +17,90 @@
   display: flex;
   margin-left: 58px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  background-color: rgba(244, 244, 244, 1)
 }
 .savelike button {
   padding: 5px;
   width: 70px;
   margin-right: 10px;
   border: 1px solid rgba(187, 187, 187, 1);
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
   color: rgba(117, 117, 117, 1)
+}
+.savelike button:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+.shotsimg {
+  height: 350px;
+  width: 100%;
+}
+.shotsimg img{
+  width: 100%;
+  height: 100%;
+}
+.container .shotDesc {
+  background: rgba(244, 244, 244, 1);
+}
+.container .shotDesc p {
+  line-height: 1.3;
+  padding: 22px;
+  color: rgba(85, 85, 85, .9);
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container .shotDesc ul{
+  padding-left: 22px;
+  color:rgb(58, 139, 187);
+  display: flex;
+  /* justify-content: space-around */
+}
+.container .shotDesc ul span {
+  color: rgb(85, 85, 85)
+}
+.shotStatus {
+  padding: 22px;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+  background-color: rgba(244, 244, 244, 1)
+}
+.shotStatus div {
+  margin-bottom: 16px;
+}
+.shotStatus .icon {
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+.shotStatus .shotTags ul {
+  display: flex;
+  flex-wrap: wrap
+}
+.shotStatus .shotTags ul li {
+  margin-right: 8px;
+}
+.shotStatus .shotColors {
+  display: flex;
+  margin-bottom: 0;
+}
+.shotStatus .shotColors>div {
+ height: 16px;
+ width: 18px;
+}
+.shotStatus .shotColors .shotColor1 {
+  background: rgb(170, 177, 197);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.shotStatus .shotColors .shotColor2 {
+  background: rgb(217, 74, 66)
+}
+.shotStatus .shotColors .shotColor3 {
+  background: rgb(78, 43, 62)
+}
+.shotStatus .shotColors .shotColor4 {
+  background: rgb(98, 146, 115)
+}
+.shotStatus .shotColors .shotColor5 {
+  background: rgb(46, 116, 204)
+}
+.shotStatus .shotColors .shotColor6 {
+  background: rgb(253, 169, 170)
 }
