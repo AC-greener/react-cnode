@@ -1,10 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './style.css';
 
 class Shots extends React.Component {
   render () {
     return (
       <div className="container">
+        <div className="goback">
+          <Link to="/">
+            <svg className="icon fanhui" aria-hidden="true">
+              <use xlinkHref="#icon-fanhui" />
+            </svg>
+          </Link>
+        </div>
         <div className="shotsWrap">
           <div className="avatarWrap">
             <div className="avatar">
@@ -61,12 +69,12 @@ class Shots extends React.Component {
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-color" />
             </svg>
-            <div className='shotColor1'></div>
-            <div className='shotColor2'></div>
-            <div className='shotColor3'></div>
-            <div className='shotColor4'></div>
-            <div className='shotColor5'></div>
-            <div className='shotColor6'></div>
+            <div className="shotColor1" />
+            <div className="shotColor2" />
+            <div className="shotColor3" />
+            <div className="shotColor4" />
+            <div className="shotColor5" />
+            <div className="shotColor6" />
           </div>
           <div className="shotViews">
             <svg className="icon" aria-hidden="true">
@@ -91,6 +99,42 @@ class Shots extends React.Component {
               <use xlinkHref="#icon-date" />
             </svg>
             Feb 24,2019
+          </div>
+        </div>
+        <div className="footer">
+          <div className="logo">
+            <img
+              src={require ('../../statics/imgs/dribbble-small.png')}
+              alt="dribbble"
+            />
+            <p>Show and tell for designers</p>
+          </div>
+          <p className="about">
+            What are you working on? Dribbble is a community of designers sharing screenshots of their work,
+            process, and projects.
+          </p>
+          <p className="follow" />
+          <p className='x'>Dribbble</p>
+          <div className="footerNav">
+            <div className='navLeft'>
+              <ul>
+                <li>About</li>
+                <li>Help</li>
+                <li>Contact</li>
+                <li>Careers</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+            <div className='navRight'>
+              <ul>
+                <li>Shop</li>
+                <li>Testimonials</li>
+                <li>Media Kit</li>
+                <li>Advertise</li>
+                <li>API</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
