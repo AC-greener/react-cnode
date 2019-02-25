@@ -6,7 +6,16 @@
   right: 0;
   background-color: rgb(51, 51, 51);
 }
-
+.loginWrapper .goback {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  
+}
+.loginWrapper .goback .icon {
+  font-size: 1.5em;
+  fill: aliceblue
+}
 .loginWrapper header {
   display: flex;
   flex-direction: column;

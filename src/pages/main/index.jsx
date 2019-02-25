@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import axios from 'axios'
 class Main extends React.Component {
   render() {
     return (

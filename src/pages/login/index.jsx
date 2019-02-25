@@ -1,15 +1,24 @@
 import React from 'react';
 import './style.css';
+import {Link} from 'react-router-dom';
+
 class Login extends React.Component {
-  constructor (props) {
-    super (props);
-  }
   render () {
     return (
       <div className="loginWrapper">
+        <div className="goback">
+          <Link to="/">
+            <svg className="icon fanhui" aria-hidden="true">
+              <use xlinkHref="#icon-fanhui" />
+            </svg>
+          </Link>
+        </div>
         <header>
           <div className="name">
-          <img src={require('../../statics/imgs/dribbble.png')} alt=""/>
+            <img
+              src={require ('../../statics/imgs/dribbble.png')}
+              alt="dribbble"
+            />
           </div>
           <div className="signin">
             <h2>Sign in</h2>
@@ -21,36 +30,37 @@ class Login extends React.Component {
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-twitter" />
               </svg>
-              Sign in with Twitter</a>
+              Sign in with Twitter
+            </a>
           </div>
           <div className="item">
             <a>
-              <svg  className="icon" aria-hidden="true">
+              <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-facebook" />
               </svg>
               Sign in with Facebook
-              </a>
+            </a>
           </div>
           <div className="item">
-          
+
             <a>
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-google" />
               </svg>
               Sign in with Google
-              
-              </a>
+
+            </a>
           </div>
         </div>
         <div className="validation">
           <div className="username">
-            <div className='label'>
+            <div className="label">
               <label htmlFor="username">Username or Email</label>
             </div>
             <input type="text" id="username" />
           </div>
           <div className="password">
-            <div className='label'>
+            <div className="label">
               <label htmlFor="username">Password</label>
             </div>
             <input type="text" id="password" />
