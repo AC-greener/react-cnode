@@ -19,11 +19,11 @@ class HomeHeader extends React.Component {
             <div>Discover the world’s top </div>
             <div>designers & creatives</div>
           </h3>
-          <p className='descDribbble'>
+          <div className='descDribbble'>
             <div>Dribbble is the leading destination to find</div>
             <div>& showcase creative work and home to </div>
             <div>the world's best design professionals.</div>
-          </p>
+          </div>
           <div className='buttonWrapper'>
           <Link className='login' to='/login'>sign in</Link>
           </div>

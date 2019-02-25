@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Login extends React.Component {
   render () {
     return (
-      <div className="loginWrapper">
+      <div className="loginWrap">
         <div className="goback">
           <Link to="/">
             <svg className="icon fanhui" aria-hidden="true">
@@ -26,7 +26,7 @@ class Login extends React.Component {
         </header>
         <div className="box">
           <div className="item">
-            <a>
+            <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-twitter" />
               </svg>
@@ -34,7 +34,7 @@ class Login extends React.Component {
             </a>
           </div>
           <div className="item">
-            <a>
+            <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-facebook" />
               </svg>
@@ -42,8 +42,7 @@ class Login extends React.Component {
             </a>
           </div>
           <div className="item">
-
-            <a>
+            <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-google" />
               </svg>

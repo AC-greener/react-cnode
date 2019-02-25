@@ -13,12 +13,12 @@ class Aside extends React.Component {
             <div className="loginWrapper">
               <svg  className="icon iconDribbble" aria-hidden="true">
                 <use xlinkHref="#icon-dribbble"></use>
-              </svg>
+              </svg>  
               <div>
                 Login
               </div>
               <div>
-                Tap here to lohin
+                Tap here to login
               </div>
               <img src="../../statics/imgs/ball.ico" alt="" />
             </div>
@@ -60,8 +60,6 @@ class Aside extends React.Component {
                   </svg>
                 </span>
                 <span>
-                {/* <button id="add1" onClick={()=> this.props.add1()}>+1</button>
-                  {this.props.n} */}
                   Report a bug
                 </span>
               </div>
@@ -80,7 +78,7 @@ class Aside extends React.Component {
       return axios
           .get('/api/test.json')
           .then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             dispatch({type: 'xxx', data: res.data})
           })
     }
