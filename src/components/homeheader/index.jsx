@@ -32,7 +32,7 @@ class HomeHeader extends React.Component {
             <div>the world's best design professionals.</div>
           </div>
           <div className="buttonWrapper">
-            <Link className="login" to="/login">sign in</Link>
+            <Link className="login" to="/login">Sign In</Link>
           </div>
         </div>
         <div className="tabBar">

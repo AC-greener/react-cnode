@@ -20,14 +20,18 @@ class Aside extends React.Component {
             <svg className="icon iconDribbble" aria-hidden="true">
               <use xlinkHref="#icon-dribbble" />
             </svg>
-            <div>
-              Login
-            </div>
-            <div>
-              Tap here to login
-            </div>
+            <Link to="/login">
+              <div className="login">
+                Login
+              </div>
+              <div className="tabLogin">
+                Tap here to login
+              </div>
+            </Link>
+
             <img src="../../statics/imgs/ball.ico" alt="" />
           </div>
+          <hr />
           <div className="itemWrapper">
             <div className="item">
               <span>
@@ -35,7 +39,9 @@ class Aside extends React.Component {
                   <use xlinkHref="#icon-home" />
                 </svg>
               </span>
-              <span>home</span>
+              <Link to='/'>
+                <span>home</span>
+              </Link>
             </div>
             <div className="item">
               <span>
@@ -48,6 +54,7 @@ class Aside extends React.Component {
               </span>
             </div>
           </div>
+          <hr />
           <div className="itemWrapper">
             <div className="item">
               <span>
