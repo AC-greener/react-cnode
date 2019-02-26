@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux';
+import axios from 'axios'
+import store from '../../store/index';
 import './style.css';
-
 class Shots extends React.Component {
   render () {
     return (
@@ -16,7 +18,7 @@ class Shots extends React.Component {
         <div className="shotsWrap">
           <div className="avatarWrap">
             <div className="avatar">
-              <img src={require ('../../statics/imgs/avatar1.jpg')} alt="" />
+              <img src={this.props.shotsData[0] && this.props.shotsData[0].imgUrl} alt="" />
             </div>
             <div className="intro">
               <div className="name">zhangsan</div>
@@ -133,6 +135,9 @@ class Shots extends React.Component {
                 <li>Media Kit</li>
                 <li>Advertise</li>
                 <li>API</li>
+                {
+                  console.log(this.props.shotsData[0] && this.props.shotsData[0])
+                }
               </ul>
             </div>
           </div>
@@ -140,5 +145,28 @@ class Shots extends React.Component {
       </div>
     );
   }
+
+  componentDidMount() {
+    console.log(this.props.match.params.id)
+    const action = (dispatch) => {
+      return axios.get('/shots.json')
+        .then(res => {
+          dispatch({type: 'get_shots_data', data: res.data})
+        })
+    }
+    store.dispatch(action)
+  }
 }
-export default Shots;
+const mapStateToProps = (state) => {
+  return {
+    shotsData: state.shotsReducer.shotsData,
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    closeLoginModal: () => {
+      dispatch({type: 'xxx', value: false})
+    }
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Shots);

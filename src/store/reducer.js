@@ -1,8 +1,8 @@
 import { combineReducers} from 'redux'
-import asideReducer from '../components/aside/store/reducer'
+import shotsReducer from '../pages/shots/store/reducer'
 import homeHeaderReducer from '../components/homeheader/store/reducer'
 const rootReducer = combineReducers({
-  asideReducer,
+  shotsReducer,
   homeHeaderReducer
 })
 export default rootReducer

@@ -1,6 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './style.css';
 import axios from 'axios';
 import store from '../../store/index';
@@ -83,31 +83,26 @@ class Aside extends React.Component {
   }
   componentDidMount () {
     const action = dispatch => {
-      return axios.get ('/api/test.json').then (res => {
-        // console.log(res.data)
+      return axios.get ('/shots.json').then (res => {
         dispatch ({type: 'xxx', data: res.data});
       });
     };
     //本来的action是一个对象，现在是一个函数
-    // console.log(action())
+    // console.log(action)
     store.dispatch (action);
   }
 }
 const mapStateToProps = state => {
   return {
-    n: state.asideReducer.n,
-    modalStatus: state.asideReducer.showLoginModal,
+    // shotsData: state.asideReducer.shotsData,
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    add1: () => {
-      dispatch ({type: 'add', payload: 1});
-    },
     closeLoginModal () {
       dispatch ({type: 'change_login_modal', value: false});
     },
   };
 };
-export default connect (mapStateToProps, mapDispatchToProps) (Aside);
+export default connect (mapStateToProps, mapDispatchToProps)(Aside);
