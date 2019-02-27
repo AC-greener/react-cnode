@@ -31,9 +31,10 @@ class HomeHeader extends React.Component {
             <div>& showcase creative work and home to </div>
             <div>the world's best design professionals.</div>
           </div>
-          <div className="buttonWrapper">
-            <Link className="login" to="/login">Sign In</Link>
-          </div>
+          {/* <h1 class="animated infinite bounce delay-2s">Example</h1> */}
+              <div className="buttonWrapper animated bounce">
+              <Link className="login" to="/login">Sign In</Link>
+            </div>
           <div className='artBy'>
             Art by DKNG
           </div>

@@ -28,10 +28,11 @@
 }
 
 .homeHero .buttonWrapper .login {
+  font-size: 13px;
   color: rgb(255, 255, 255);
   border-radius: 4px;
   border: 1px solid rgb(243, 76, 143);
-  padding: 8px 10px 8px 10px;
+  padding: 9px 11px 9px 11px;
   background: rgb(243, 76, 143);
 }
 

@@ -7,7 +7,7 @@ import store from '../../store/index';
 class Aside extends React.Component {
   render () {
     return (
-      <aside className="clearfix">
+      <aside className="clearfix animated slideInLeft">
         <div className="goback">
           <Link to="/">
             <svg className="icon fanhui" aria-hidden="true">

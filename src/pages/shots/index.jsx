@@ -24,7 +24,9 @@ class Shots extends React.Component {
               />
             </div>
             <div className="intro">
-              <div className="name">zhangsan</div>
+              <div className="name">{
+                this.props.shotsData.shotName
+              }</div>
               <div className="from"><span className='by'>by</span> Divan Raj</div>
             </div>
           </div>
@@ -39,7 +41,7 @@ class Shots extends React.Component {
           </div>
         </div>
         <div className="shotsimg">
-          <img src={require ('../../statics/imgs/item10.png')} alt="" />
+          <img src={require ('../../statics/imgs/shots1.png')} alt="" />
         </div>
         <div className="shotDesc">
           <p>
