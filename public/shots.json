@@ -1,22 +1,115 @@
 ﻿{
     "success": "true",
-    "data": [{
-        "id": "1",
-        "shotName": "Be1111",
-        "author": "zhangsan",
-        "views": 88,
-        "likes": 33,
-        "saves": 20,
-        "date": "Feb 24，2019",
-        "imgUrl": "/imgs/avatar1.jpg"
-    },{
-        "id": "2",
-        "shotName": "Be1111",
-        "author": "lisi",
-        "views": 88,
-        "likes": 33,
-        "saves": 20,
-        "date": "Feb 24，2019",
-        "imgUrl": "/imgs/avatar1.jpg"
-    }]
+    "data": [
+        {
+            "id": "1",
+            "shotName": "Novem Vitae Cattus",
+            "author": "Damian Orellana",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/shroom.jpg",
+            "avatarUrl": "/imgs/avatar1.jpg"
+        }, {
+            "id": "2",
+            "shotName": "Learn Anywhere",
+            "author": "Vic",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar2.png"
+        },
+        {
+            "id": "3",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar3.jpg"
+        },
+        {
+            "id": "4",
+            "shotName": "Yolked",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar4.png"
+        },
+        {
+            "id": "5",
+            "shotName": "The Taco",
+            "author": "Karl Hébert",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar5.jpg"
+        },
+        {
+            "id": "6",
+            "shotName": "Lofi music cover",
+            "author": "Mercedes Bazan",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar6.png"
+            
+        },
+        {
+            "id": "7",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar7.png"
+        },
+        {
+            "id": "8",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar8.jpg"
+        },
+        {
+            "id": "9",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar9.png"
+        },
+        {
+            "id": "10",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2019",
+            "imgUrl": "/imgs/avatar2.png",
+            "avatarUrl": "/imgs/avatar10.jpg"
+        }
+    ]
 }

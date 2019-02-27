@@ -19,13 +19,13 @@ class Shots extends React.Component {
           <div className="avatarWrap">
             <div className="avatar">
               <img
-                src={this.props.shotsData && this.props.shotsData.imgUrl}
+                src={this.props.shotsData && this.props.shotsData.avatarUrl}
                 alt=""
               />
             </div>
             <div className="intro">
               <div className="name">zhangsan</div>
-              <div className="from">by Divan Raj in Fitness scheduling app</div>
+              <div className="from"><span className='by'>by</span> Divan Raj</div>
             </div>
           </div>
           <div className="savelike">

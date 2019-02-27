@@ -21,6 +21,13 @@
 .avatarWrap .avatar {
   margin-right: 10px;
 }
+.avatarWrap .intro .by {
+  color: #999;
+}
+.avatarWrap .intro .from {
+  margin-top: 5px;
+  color: rgb(58, 139, 187);
+}
 .avatarWrap>.avatar img {
   border-radius: 50%;
   width: 48px;

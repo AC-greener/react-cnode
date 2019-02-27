@@ -4,7 +4,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 15px;
-  background: rgb(244, 244, 244)
+  background: rgb(239, 237, 237);
 }
 .contentWrapper .item {
   width: 154px;
