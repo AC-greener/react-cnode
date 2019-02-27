@@ -43,9 +43,9 @@ class HomeHeader extends React.Component {
           <div>
             popular
           </div>
-          <div>
+          {/* <div>
             rencent
-          </div>
+          </div> */}
           <span>
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-grid" />

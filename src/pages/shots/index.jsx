@@ -41,7 +41,7 @@ class Shots extends React.Component {
           </div>
         </div>
         <div className="shotsimg">
-          <img src={require ('../../statics/imgs/shots1.png')} alt="" />
+          <img src={this.props.shotsData.imgUrl} alt="" />
         </div>
         <div className="shotDesc">
           <p>
@@ -87,25 +87,25 @@ class Shots extends React.Component {
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-view" />
             </svg>
-            3245 views
+            {this.props.shotsData.views} views
           </div>
           <div className="shotLikes">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-xin" />
             </svg>
-            261 likes
+            {this.props.shotsData.likes} likes
           </div>
           <div className="shotSaves">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-tianjia" />
             </svg>
-            246 saves
+            {this.props.shotsData.saves} saves
           </div>
           <div className="shotDate">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-date" />
             </svg>
-            Feb 24,2019
+            {this.props.shotsData.date}
           </div>
         </div>
         <div className="footer">

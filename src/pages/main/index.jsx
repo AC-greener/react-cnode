@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
+import store from '../../store/index';
 import './style.css';
 import HomeHeader from '../../components/homeheader/index';
+import {connect} from 'react-redux';
 
 class Main extends React.Component {
   render () {
@@ -9,59 +12,64 @@ class Main extends React.Component {
       <div>
         <HomeHeader />
         <div className="contentWrapper">
-          <Link to="/shots/1">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots1.png')} alt="" />
-            </div>
-          </Link>
-          <Link to="/shots/2">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots2.png')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/3">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots3.jpg')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/4">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots4.jpg')} alt="" />
-            </div>
-          </Link>
-          <Link to="/shots/5">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots5.jpg')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/6">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots6.jpg')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/7">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots7.jpg')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/8">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots8.png')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/9">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots9.png')} alt="img" />
-            </div>
-          </Link>
-          <Link to="/shots/10">
-            <div className="item">
-              <img src={require ('../../statics/imgs/shots10.jpg')} alt="img" />
-            </div>
-          </Link>
+          {this.props.shots.map ((item, index) => {
+            if (this.props.rowArrangement) {
+              return (
+                <Link key={index} to={'/shots/' + index}>
+                  <div className="item">
+                    <img src={item.imgUrl} alt="" />
+                  </div>
+                </Link>
+              );
+            } else {
+              return (
+                <Link key={index} to={'/shots/' + index}>
+                  <div key={index} className="item x">
+                    <img
+                      src={item.imgUrl}
+                      alt=""
+                    />
+                    <div className="descShot">
+                      <svg className="icon" aria-hidden="true">
+                        <use xlinkHref="#icon-view" />
+                      </svg>
+                      <span>120</span>
+                      <svg className="icon" aria-hidden="true">
+                        <use xlinkHref="#icon-xin" />
+                      </svg>
+                      <span>33</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            }
+          })}
+
         </div>
       </div>
     );
   }
+  componentDidMount () {
+    const action = dispatch => {
+      return axios.get ('/shots.json').then (res => {
+        let result = res.data.data;
+        dispatch ({type: 'init_shots_data', data: result});
+      });
+    };
+    store.dispatch (action);
+  }
 }
-export default Main;
+const mapStateToProps = state => {
+  return {
+    shots: state.mainReducer.shotsData,
+    rowArrangement: state.mainReducer.rowArrangement,
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    closeLoginModal: () => {
+      dispatch ({type: 'xxx', value: false});
+    },
+  };
+};
+export default connect (mapStateToProps, mapDispatchToProps) (Main);
