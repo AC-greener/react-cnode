@@ -20,7 +20,7 @@ class HomeHeader extends React.Component {
         </header>
         <div className="homeHero">
           <div className="imgWrapper">
-            <img src={require ('../../statics/imgs/dribbble1.png')} alt="" />
+            <img src={require ('../../statics/imgs/bg.png')} alt="" />
           </div>
           <h3>
             <div>Discover the world’s top </div>
@@ -33,6 +33,9 @@ class HomeHeader extends React.Component {
           </div>
           <div className="buttonWrapper">
             <Link className="login" to="/login">Sign In</Link>
+          </div>
+          <div className='artBy'>
+            Art by DKNG
           </div>
         </div>
         <div className="tabBar">

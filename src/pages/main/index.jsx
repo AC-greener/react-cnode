@@ -46,20 +46,19 @@ class Main extends React.Component {
           </Link>
           <Link to="/shots/8">
             <div className="item">
-              <img src={require ('../../statics/imgs/shots6.jpg')} alt="img" />
+              <img src={require ('../../statics/imgs/shots8.png')} alt="img" />
             </div>
           </Link>
           <Link to="/shots/9">
             <div className="item">
-              <img src={require ('../../statics/imgs/shots6.jpg')} alt="img" />
+              <img src={require ('../../statics/imgs/shots9.png')} alt="img" />
             </div>
           </Link>
           <Link to="/shots/10">
             <div className="item">
-              <img src={require ('../../statics/imgs/shots6.jpg')} alt="img" />
+              <img src={require ('../../statics/imgs/shots10.jpg')} alt="img" />
             </div>
           </Link>
-
         </div>
       </div>
     );
