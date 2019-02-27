@@ -8,7 +8,7 @@
         "likes": 33,
         "saves": 20,
         "date": "Feb 24，2019",
-        "imgUrl": "/avatar1.jpg"
+        "imgUrl": "/imgs/avatar1.jpg"
     },{
         "id": "2",
         "shotName": "Be1111",
@@ -17,6 +17,6 @@
         "likes": 33,
         "saves": 20,
         "date": "Feb 24，2019",
-        "imgUrl": "../../statics/imgs/avatar1.jpg"
+        "imgUrl": "/imgs/avatar1.jpg"
     }]
 }

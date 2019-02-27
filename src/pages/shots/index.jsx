@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux';
-import axios from 'axios'
+import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import axios from 'axios';
 import store from '../../store/index';
 import './style.css';
 class Shots extends React.Component {
@@ -18,7 +18,10 @@ class Shots extends React.Component {
         <div className="shotsWrap">
           <div className="avatarWrap">
             <div className="avatar">
-              <img src={this.props.shotsData[0] && this.props.shotsData[0].imgUrl} alt="" />
+              <img
+                src={this.props.shotsData && this.props.shotsData.imgUrl}
+                alt=""
+              />
             </div>
             <div className="intro">
               <div className="name">zhangsan</div>
@@ -116,9 +119,9 @@ class Shots extends React.Component {
             process, and projects.
           </p>
           <p className="follow" />
-          <p className='x'>Dribbble</p>
+          <p className="x">Dribbble</p>
           <div className="footerNav">
-            <div className='navLeft'>
+            <div className="navLeft">
               <ul>
                 <li>About</li>
                 <li>Help</li>
@@ -128,16 +131,16 @@ class Shots extends React.Component {
                 <li>Privacy</li>
               </ul>
             </div>
-            <div className='navRight'>
+            <div className="navRight">
               <ul>
                 <li>Shop</li>
                 <li>Testimonials</li>
                 <li>Media Kit</li>
                 <li>Advertise</li>
                 <li>API</li>
-                {
-                  console.log(this.props.shotsData[0] && this.props.shotsData[0])
-                }
+                {console.log (
+                  this.props.shotsData && this.props.shotsData.author
+                )}
               </ul>
             </div>
           </div>
@@ -146,27 +149,33 @@ class Shots extends React.Component {
     );
   }
 
-  componentDidMount() {
-    console.log(this.props.match.params.id)
-    const action = (dispatch) => {
-      return axios.get('/shots.json')
-        .then(res => {
-          dispatch({type: 'get_shots_data', data: res.data})
+  componentDidMount () {
+    const action = dispatch => {
+      return axios.get ('/shots.json').then (res => {
+        let result = {}
+        res.data.data.forEach(item => {
+          if(item.id === this.props.match.params.id) {
+            result = item
+            return 
+          }
         })
-    }
-    store.dispatch(action)
+        console.log (result);
+        dispatch ({type: 'get_shots_data', data: result});
+      });
+    };
+    store.dispatch (action);
   }
 }
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     shotsData: state.shotsReducer.shotsData,
-  }
-}
-const mapDispatchToProps = (dispatch) => {
+  };
+};
+const mapDispatchToProps = dispatch => {
   return {
     closeLoginModal: () => {
-      dispatch({type: 'xxx', value: false})
-    }
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Shots);
+      dispatch ({type: 'xxx', value: false});
+    },
+  };
+};
+export default connect (mapStateToProps, mapDispatchToProps) (Shots);
