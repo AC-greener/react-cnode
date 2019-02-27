@@ -8,10 +8,7 @@ class HomeHeader extends React.Component {
       <div>
         <header className="header">
           <Link to="/aside">
-            <svg
-              className="icon sideNav"
-              aria-hidden="true"
-            >
+            <svg className="icon sideNav" aria-hidden="true">
               <use xlinkHref="#icon-nav" />
             </svg>
           </Link>
@@ -32,25 +29,41 @@ class HomeHeader extends React.Component {
             <div>the world's best design professionals.</div>
           </div>
           {/* <h1 class="animated infinite bounce delay-2s">Example</h1> */}
-              <div className="buttonWrapper animated bounce">
-              <Link className="login" to="/login">Sign In</Link>
-            </div>
-          <div className='artBy'>
+          <div className="buttonWrapper animated bounce">
+            <Link className="login" to="/login">Sign In</Link>
+          </div>
+          <div className="artBy">
             Art by DKNG
           </div>
         </div>
         <div className="tabBar">
-          <div>
-            popular
+
+          <div className="display">
+            <div className="itemWrap">
+              <div className="squareItem" />
+              <div className="squareItem" />
+            </div>
+            <div className="itemWrap">
+              <div className="squareItem" />
+              <div className="squareItem" />
+            </div>
           </div>
-          {/* <div>
-            rencent
-          </div> */}
-          <span>
-            <svg className="icon" aria-hidden="true">
-              <use xlinkHref="#icon-grid" />
-            </svg>
-          </span>
+          <div className="displayOption">
+            <div className='options'>
+              DISPLAY OPTIONS
+            </div>
+            <div className="optionWrap">
+              <div className="col">
+                <div className="colQuare" >
+                <hr/>
+                </div>
+              </div>
+              <div className="row">
+                <div className="rowQuare" />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     );

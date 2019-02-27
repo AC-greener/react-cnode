@@ -6,6 +6,7 @@
   align-items: center;
   color: rgb(255, 255, 255);
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 
@@ -79,18 +80,98 @@
   justify-content: center;
   border-bottom: 1px solid #e5e5e5;
   background: rgb(251, 251, 251);
+  height: 34px;
 }
 
 .tabBar div {
-  margin: 8px;
 }
 
-.tabBar span {
+.tabBar .display {
   position: absolute;
   right: 0;
+  display: flex;
   top: 50%;
   transform: translateY(-50%);
+  padding: 5px 5px 7px 7px;
+  background-color: rgb(51, 51, 51);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-top: 2px;
 }
+.tabBar .displayOption {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  height: 100px;
+  width: 206px;
+  padding: 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: rgb(51, 51, 51)
+}
+.tabBar .displayOption>.options {
+  color: rgb(204, 204, 204);
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.tabBar .optionWrap {
+  display: flex;
+}
+.tabBar .displayOption .col {
+  height: 50px;
+  width: 90px;
+  border-radius: 2px;
+  margin-right: 10px;
+  background: rgb(80, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabBar .displayOption .col>.colQuare {
+  border:3px solid rgb(51, 51, 51);
+  width: 30px;
+  height: 32px;
+  border-radius: 1px;
+  position: relative;
+}
+.tabBar .displayOption .col>.colQuare>hr {
+  position: absolute;
+  border: none;
+  border-bottom: 3px solid rgb(51, 51, 51);
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  
+}
+.tabBar .displayOption .row {
+  height: 50px;
+  width: 90px;
+  border-radius: 2px;
+  background: rgb(80, 80, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.tabBar .displayOption .row>.rowQuare {
+  border:3px solid rgb(51, 51, 51);
+  width: 22px;
+  height: 20px;
+  border-radius: 1px;
+}
+.tabBar .display.arrgement {
+  padding: 5px 5px 7px 7px;
+}
+.tabBar .display>.itemWrap {
+  margin-right: 2px;
+}
+.tabBar .display .squareItem {
+  border: 4px solid rgb(187, 187, 187);
+  border-radius: 2px;
+  margin-top: 2px;
+}
+
 
 .tabBar span .icon {
   fill: rgb(187, 187, 187);

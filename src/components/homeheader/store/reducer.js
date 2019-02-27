@@ -1,6 +1,6 @@
 
 const defaultState = {
-
+  showDisplayOptions: false
 }
 const homeHeaderReducer = (state = defaultState, action) => {
  

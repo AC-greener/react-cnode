@@ -33,11 +33,11 @@ class Main extends React.Component {
                       <svg className="icon" aria-hidden="true">
                         <use xlinkHref="#icon-view" />
                       </svg>
-                      <span>120</span>
+                      <span>{item.views}</span>
                       <svg className="icon" aria-hidden="true">
                         <use xlinkHref="#icon-xin" />
                       </svg>
-                      <span>33</span>
+                      <span>{item.likes}</span>
                     </div>
                   </div>
                 </Link>
