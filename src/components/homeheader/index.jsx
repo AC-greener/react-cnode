@@ -4,6 +4,51 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 class HomeHeader extends React.Component {
   render () {
+    if (this.props.showDisplayOptions) {
+      var displayOption = (
+        <div className="display" onClick={this.props.showDisplayOption}>
+          <div className="itemWrap">
+            <div className="squareItem" />
+            <div className="squareItem" />
+          </div>
+          <div className="itemWrap">
+            <div className="squareItem" />
+            <div className="squareItem" />
+          </div>
+        </div>
+      );
+    } else {
+      displayOption = (
+        <div>
+          <div className="display x" onClick={this.props.showDisplayOption}>
+            <div className="itemWrap">
+              <div className="squareItem" />
+              <div className="squareItem" />
+            </div>
+            <div className="itemWrap">
+              <div className="squareItem" />
+              <div className="squareItem" />
+            </div>
+          </div>
+          <div className="displayOption">
+            <div className="options">
+              DISPLAY OPTIONS
+            </div>
+            <div className="optionWrap">
+              <div className={this.props.colClicked? 'col clicked':'col'} onClick={this.props.changeColDisplay}>
+                <div className="colQuare">
+                  <hr />
+                </div>
+              </div>
+              <div className={this.props.rowClicked? 'row clicked':'row'} onClick={this.props.changeRowDisplay}>
+                <div className="rowQuare" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      );
+    }
     return (
       <div>
         <header className="header">
@@ -36,34 +81,9 @@ class HomeHeader extends React.Component {
             Art by DKNG
           </div>
         </div>
+        {}
         <div className="tabBar">
-
-          <div className="display">
-            <div className="itemWrap">
-              <div className="squareItem" />
-              <div className="squareItem" />
-            </div>
-            <div className="itemWrap">
-              <div className="squareItem" />
-              <div className="squareItem" />
-            </div>
-          </div>
-          <div className="displayOption">
-            <div className='options'>
-              DISPLAY OPTIONS
-            </div>
-            <div className="optionWrap">
-              <div className="col">
-                <div className="colQuare" >
-                <hr/>
-                </div>
-              </div>
-              <div className="row">
-                <div className="rowQuare" />
-              </div>
-            </div>
-
-          </div>
+          {displayOption}
         </div>
       </div>
     );
@@ -71,13 +91,23 @@ class HomeHeader extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    showDisplayOptions: state.homeHeaderReducer.showDisplayOptions,
+    colClicked: state.mainReducer.colClicked,
+    rowClicked: state.mainReducer.rowClicked
+  };
 };
 const mapDispatchToProps = dispatch => {
   return {
-    showAsideModal () {
-      dispatch ({type: 'change_login_modal', value: true});
+    showDisplayOption() {
+      dispatch ({type: 'show_display_option'});
     },
+    changeColDisplay() {
+      dispatch({type: 'change_col_display'})
+    },
+    changeRowDisplay() {
+      dispatch({type: 'change_row_display'})
+    }
   };
 };
 export default connect (mapStateToProps, mapDispatchToProps) (HomeHeader);
