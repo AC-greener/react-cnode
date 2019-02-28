@@ -13,6 +13,7 @@ class Main extends React.Component {
         <HomeHeader />
         <div className="contentWrapper">
           {this.props.shots.map ((item, index) => {
+            index++
             if (this.props.rowArrangement) {
               return (
                 <Link key={index} to={'/shots/' + index}>

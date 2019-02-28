@@ -46,6 +46,9 @@
   background: rgba(255, 255, 255, 1);
   color: rgba(117, 117, 117, 1)
 }
+.savelike button a {
+  color: rgba(117, 117, 117, 1)
+}
 .savelike button:active {
   background: rgba(255, 255, 255, 0.4);
 }

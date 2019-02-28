@@ -31,7 +31,9 @@ class Shots extends React.Component {
             </div>
           </div>
           <div className="savelike">
-            <button> Save </button>
+            <button>
+              <a href={this.props.shotsData.imgUrl} download>Save</a>
+            </button>
             <button>
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-xin" />
