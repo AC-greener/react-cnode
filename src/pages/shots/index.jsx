@@ -142,9 +142,6 @@ class Shots extends React.Component {
                 <li>Media Kit</li>
                 <li>Advertise</li>
                 <li>API</li>
-                {console.log (
-                  this.props.shotsData && this.props.shotsData.author
-                )}
               </ul>
             </div>
           </div>
@@ -163,7 +160,6 @@ class Shots extends React.Component {
             return 
           }
         })
-        console.log (result);
         dispatch ({type: 'get_shots_data', data: result});
       });
     };
