@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.290b406b.chunk.css",
-  "main.js": "/static/js/main.501e5735.chunk.js",
-  "main.js.map": "/static/js/main.501e5735.chunk.js.map",
-  "static/js/1.cefb6507.chunk.js": "/static/js/1.cefb6507.chunk.js",
-  "static/js/1.cefb6507.chunk.js.map": "/static/js/1.cefb6507.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.290b406b.chunk.css.map": "/static/css/main.290b406b.chunk.css.map",
-  "static/media/bg.png": "/static/media/bg.8650aeaf.png",
-  "static/media/dribbble.png": "/static/media/dribbble.f67e0a5a.png",
-  "index.html": "/index.html",
-  "precache-manifest.ef6afc8af05a2e90a59cd3a89372bed7.js": "/precache-manifest.ef6afc8af05a2e90a59cd3a89372bed7.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/react-dribbble/build/static/css/main.290b406b.chunk.css",
+  "main.js": "/react-dribbble/build/static/js/main.501e5735.chunk.js",
+  "main.js.map": "/react-dribbble/build/static/js/main.501e5735.chunk.js.map",
+  "static/js/1.cefb6507.chunk.js": "/react-dribbble/build/static/js/1.cefb6507.chunk.js",
+  "static/js/1.cefb6507.chunk.js.map": "/react-dribbble/build/static/js/1.cefb6507.chunk.js.map",
+  "runtime~main.js": "/react-dribbble/build/static/js/runtime~main.353018c2.js",
+  "runtime~main.js.map": "/react-dribbble/build/static/js/runtime~main.353018c2.js.map",
+  "static/css/main.290b406b.chunk.css.map": "/react-dribbble/build/static/css/main.290b406b.chunk.css.map",
+  "static/media/bg.png": "/react-dribbble/build/static/media/bg.8650aeaf.png",
+  "static/media/dribbble.png": "/react-dribbble/build/static/media/dribbble.f67e0a5a.png",
+  "index.html": "/react-dribbble/build/index.html",
+  "precache-manifest.a64b93238611a2fe552b93076d3861c6.js": "/react-dribbble/build/precache-manifest.a64b93238611a2fe552b93076d3861c6.js",
+  "service-worker.js": "/react-dribbble/build/service-worker.js"
 }
