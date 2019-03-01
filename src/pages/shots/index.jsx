@@ -27,7 +27,7 @@ class Shots extends React.Component {
               <div className="name">{
                 this.props.shotsData.shotName
               }</div>
-              <div className="from"><span className='by'>by</span> Divan Raj</div>
+              <div className="from"><span className='by'>by</span> {this.props.shotsData.author}</div>
             </div>
           </div>
           <div className="savelike">
