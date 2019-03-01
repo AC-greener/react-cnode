@@ -1,0 +1,115 @@
+﻿{
+    "success": "true",
+    "data": [
+        {
+            "id": "1",
+            "shotName": "Novem Vitae Cattus",
+            "author": "Damian Orellana",
+            "views": 88,
+            "likes": 33,
+            "saves": 20,
+            "date": "Feb 24，2018",
+            "imgUrl": "/imgs/shots1.png",
+            "avatarUrl": "/imgs/avatar1.jpg"
+        }, {
+            "id": "2",
+            "shotName": "Learn Anywhere",
+            "author": "Vic",
+            "views": 1028,
+            "likes": 73,
+            "saves": 320,
+            "date": "Feb 22，2018",
+            "imgUrl": "/imgs/shots2.png",
+            "avatarUrl": "/imgs/avatar2.png"
+        },
+        {
+            "id": "3",
+            "shotName": "Shroom!",
+            "author": "Justas Galaburda ",
+            "views": 668,
+            "likes": 589,
+            "saves": 41,
+            "date": "Feb 13，2018",
+            "imgUrl": "/imgs/shots3.jpg",
+            "avatarUrl": "/imgs/avatar3.jpg"
+        },
+        {
+            "id": "4",
+            "shotName": "Yolked",
+            "author": "Justas Galaburda ",
+            "views": 1361,
+            "likes": 89,
+            "saves": 74,
+            "date": "Feb 16，2018",
+            "imgUrl": "/imgs/shots4.jpg",
+            "avatarUrl": "/imgs/avatar4.png"
+        },
+        {
+            "id": "5",
+            "shotName": "The Taco",
+            "author": "Karl Hébert",
+            "views": 2138,
+            "likes": 120,
+            "saves": 43,
+            "date": "Feb 24，2018",
+            "imgUrl": "/imgs/shots5.jpg",
+            "avatarUrl": "/imgs/avatar5.jpg"
+        },
+        {
+            "id": "6",
+            "shotName": "Lofi music cover",
+            "author": "Mercedes Bazan",
+            "views": 2075,
+            "likes": 265,
+            "saves": 90,
+            "date": "Feb 30，2018",
+            "imgUrl": "/imgs/shots6.jpg",
+            "avatarUrl": "/imgs/avatar6.png"
+            
+        },
+        {
+            "id": "7",
+            "shotName": "Barbershop sketch",
+            "author": "by Denis Davydov ",
+            "views": 168,
+            "likes": 83,
+            "saves": 21,
+            "date": "Feb 07，2018",
+            "imgUrl": "/imgs/shots7.jpg",
+            "avatarUrl": "/imgs/avatar7.png"
+        },
+        {
+            "id": "8",
+            "shotName": "Royalty - Logo for Clothing Brand",
+            "author": "Yevdokimov Kirill ",
+            "views": 628,
+            "likes": 190,
+            "saves": 42,
+            "date": "Feb 12，2018",
+            "imgUrl": "/imgs/shots8.png",
+            "avatarUrl": "/imgs/avatar8.jpg"
+        },
+        {
+            "id": "9",
+            "shotName": "Guess who i am",
+            "author": "Vicky ",
+            "views": 786,
+            "likes": 110,
+            "saves": 43,
+            "date": "Feb 27，2018",
+            "imgUrl": "/imgs/shots9.png",
+            "avatarUrl": "/imgs/avatar9.png"
+        },
+        {
+            "id": "10",
+            "shotName": "Flabthugs Mascot",
+            "author": "hozeel golmei",
+            "views": 1066,
+            "likes": 242,
+            "saves": 80,
+            "date": "Feb 14，2018",
+            "imgUrl": "/imgs/shots10.jpg",
+            "avatarUrl": "/imgs/avatar10.jpg"
+        }
+    ]
+}
