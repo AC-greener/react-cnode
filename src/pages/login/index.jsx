@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import {Link} from 'react-router-dom';
 
 class Login extends React.Component {
