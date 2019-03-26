@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-class HomeHeader extends React.Component {
+export class HomeHeader extends React.Component {
   render () {
     if (this.props.showDisplayOptions) {
       var displayOption = (
