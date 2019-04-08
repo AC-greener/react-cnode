@@ -1,4 +1,3 @@
-
 const defaultState = {
   showDisplayOptions: true,
   colClicked: false,

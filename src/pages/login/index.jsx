@@ -26,6 +26,7 @@ class Login extends React.Component {
         </header>
         <div className="box">
           <div className="item">
+          {/* eslint-disable-next-line  */} 
             <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-twitter" />
@@ -34,6 +35,7 @@ class Login extends React.Component {
             </a>
           </div>
           <div className="item">
+           {/* eslint-disable-next-line  */}
             <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-facebook" />
@@ -42,6 +44,7 @@ class Login extends React.Component {
             </a>
           </div>
           <div className="item">
+          {/* eslint-disable-next-line  */}
             <a href="#">
               <svg className="icon" aria-hidden="true">
                 <use xlinkHref="#icon-google" />

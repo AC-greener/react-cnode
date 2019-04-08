@@ -50,7 +50,7 @@ export class HomeHeader extends React.Component {
       );
     }
     return (
-      <div>
+      <div className='header1'>
         <header className="header">
           <Link to="/aside">
             <svg className="icon sideNav" aria-hidden="true">
