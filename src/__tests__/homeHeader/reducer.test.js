@@ -2,7 +2,7 @@ import State from '../../store/index'
 import reducer from '../../components/homeheader/store/reducer'
 
 describe('homeHeader/reducer', () => {
-  it('should return show_display_option status', () => {
+  it('show_display_option 值应该是false', () => {
 
     const newState = reducer({
       showDisplayOptions: true,
