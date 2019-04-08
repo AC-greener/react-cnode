@@ -4,7 +4,7 @@ enzyme.configure({ adapter: new Adapter() });
 
 import React from 'react';
 import { HomeHeader }  from '../../components/homeheader/index'   //对没有redux连接的HomeHeader组件进行测试
-import{ shallow, mount } from 'enzyme'
+import{ shallow } from 'enzyme'
 
 describe('HomeHeader组件', () => {
 

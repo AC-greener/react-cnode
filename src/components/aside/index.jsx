@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import axios from 'axios';
 import store from '../../store/index';
-class Aside extends React.Component {
+export class Aside extends React.Component {
   render () {
     return (
       <aside className="clearfix animated slideInLeft">
